@@ -107,7 +107,11 @@ tbody tr { cursor: pointer; transition: background .15s; }tbody tr:hover { backg
 .empty { padding: 55px; text-align: center; }.empty strong, .empty span { display: block; }.empty span { margin: 8px 0 18px; color: var(--muted); font-size: 11px; }.empty button { border: 1px solid var(--line-strong); border-radius: 6px; padding: 8px 12px; background: transparent; cursor: pointer; }
 .backdrop { position: fixed; inset: 0; z-index: 10; background: rgba(2,5,8,.62); backdrop-filter: blur(3px); }
 .detail { position: fixed; z-index: 11; top: 0; right: 0; width: 480px; height: 100vh; overflow-y: auto; border-left: 1px solid rgba(143,240,194,.18); background: #0d141b; box-shadow: -25px 0 80px rgba(0,0,0,.45); transform: translateX(102%); transition: transform .2s ease; }
-.detail.open { transform: translateX(0); }.detail-inner { padding: 27px 29px 35px; }
+.detail.open { transform: translateX(0); }
+/* The detail view opened from the URL paints at rest, so a headless capture never
+   catches the panel mid-slide (that made the screenshot's byte size jump around). */
+.detail.instant { transition: none; }
+.detail-inner { padding: 27px 29px 35px; }
 .detail-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; }.detail-top span { color: var(--mint); font-size: 8px; letter-spacing: 1.5px; }.close { width: 30px; height: 30px; border: 1px solid var(--line); border-radius: 7px; background: transparent; color: #84929b; cursor: pointer; }
 .detail-identity { display: flex; align-items: center; gap: 15px; }.detail-identity .avatar { flex-basis: 48px; height: 48px; border-radius: 12px; font-size: 14px; }.detail-identity h2 { margin: 0 0 5px; font-size: 24px; font-weight: 540; letter-spacing: -.7px; }.detail-identity p { margin: 0; color: var(--muted); font-size: 10px; }
 .token-badge { display: inline-flex; align-items: center; gap: 5px; margin-top: 17px; padding: 5px 8px; border: 1px solid rgba(143,240,194,.17); border-radius: 5px; background: rgba(143,240,194,.055); color: var(--mint); font-size: 7px; letter-spacing: 1px; }

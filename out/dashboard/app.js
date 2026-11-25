@@ -21,6 +21,10 @@
   // screenshot to sit between 300 and 350 KB so all three fit the dossier's 1.5 MiB cap.
   const GRAIN = { ambient: 12, detail: 4 };
   const grain = (seed, steps) => (seed % steps) - ((steps - 1) >> 1);
+  // One cadence rule for both the plan text and the panel's label, so they cannot disagree.
+  // A declaration, not a const arrow: farmSteps runs while rows is built above, and a const
+  // there is in its temporal dead zone and takes the whole page down. (Declared-work discipline.)
+  function reviewHours(row) { return row.change >= 10 ? 12 : row.change >= 0 ? 24 : 48; }
   const esc = (value) => String(value).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
   const money = (value) => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', notation: 'compact', maximumFractionDigits: value >= 1e9 ? 2 : 1 }).format(value);
   const exactMoney = (value) => new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(value);
@@ -35,7 +39,7 @@
     const budget = row.tvl >= 5e9 ? 400 : row.tvl >= 1e9 ? 150 : 60;
     const supply = Math.round(budget * 0.4);
     const fees = Math.round(budget * 0.15);
-    const review = row.change >= 10 ? '12 hours' : row.change >= 0 ? '24 hours' : '48 hours';
+    const review = `${reviewHours(row)} hours`;
     const move = `${row.change >= 0 ? 'up' : 'down'} ${Math.abs(row.change).toFixed(1)}% in seven days`;
     const steps = [
       `Open a wallet on ${chain}${alsoOn ? ` (also live on ${alsoOn})` : ''}, send $${budget}, and keep $${fees} back for network fees so gas never comes out of the position.`,
@@ -140,7 +144,7 @@
       <div class="detail-value"><label>IMPLIED PROTOCOL VALUE</label><strong>${exactMoney(row.value)}</strong><small>Rank #${row.rank} · from the snapshot's own TVL, 7d change and years without a token</small></div>
       <p class="formula">${esc(valueFactors(row))}</p>
       <div class="detail-metrics"><div><label>TOTAL VALUE LOCKED</label><strong>${money(row.tvl)}</strong></div><div><label>7D CHANGE</label><strong>${change(row.change)}</strong></div><div><label>YEARS ON RECORD</label><strong>${row.years.toFixed(2)}</strong></div></div>
-      <div class="farm-head"><h3>Concrete farm plan</h3><span>3 STEPS / 24H REVIEW</span></div>
+      <div class="farm-head"><h3>Concrete farm plan</h3><span>${row.steps.length} STEPS / ${reviewHours(row)}H REVIEW</span></div>
       <div class="steps">${row.steps.map((step) => `<div class="step">${esc(step)}</div>`).join('')}</div>
       <p class="detail-note">Illustrative research workflow, not financial advice. Verify the protocol’s official app, supported assets, wallet network and current fees before committing funds.</p>
     </div>`;
@@ -228,6 +232,7 @@
   }
 
   drawAmbient();
+  if (view === 'detail') $('detail').classList.add('instant');
   renderBoard();
   renderDetail();
 })();

@@ -70,6 +70,13 @@ for (const file of dashboardFiles.filter((name) => /\.(?:html|css|js)$/.test(nam
 }
 
 const expectedShots = ['1-board.png', '2-detail.png', '3-filtered.png'];
+const packagedScreenshots = join(here, 'out', 'screenshots');
+if (resolve(packagedScreenshots) !== screenshotsDir && existsSync(packagedScreenshots)) {
+  for (const name of expectedShots) {
+    const source = join(packagedScreenshots, name);
+    if (existsSync(source)) copyFileSync(source, join(screenshotsDir, name));
+  }
+}
 if (expectedShots.every((name) => existsSync(join(screenshotsDir, name)))) {
   writeFileSync(join(outputDir, 'dossier.json'), buildDossier(outputDir, { text_max_bytes: 65536 }));
   console.log(`Wrote ${rows.length} rows, dashboard, and dossier to ${outputDir}`);

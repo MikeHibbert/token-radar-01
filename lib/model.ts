@@ -53,10 +53,13 @@ export function buildBoard(snapshot: Snapshot, targetRows = 100): { rows: Valued
 
   const required = valued.filter((row) => watchlist.has(row.slug));
   const target = Math.max(targetRows, required.length + 60);
-  const optional = valued
-    .filter((row) => !watchlist.has(row.slug))
-    .sort(compare)
-    .slice(0, target - required.length);
+  const needed = target - required.length;
+  const available = valued.filter((row) => !watchlist.has(row.slug)).sort(compare);
+  const tradedTarget = Math.max(0, Math.floor(target * 0.1) - required.filter((row) => row.has_token).length);
+  const traded = available.filter((row) => row.has_token).slice(0, tradedTarget);
+  const tokenless = available.filter((row) => !row.has_token).slice(0, needed - traded.length);
+  const chosen = new Set([...traded, ...tokenless].map((row) => row.slug));
+  const optional = [...traded, ...tokenless, ...available.filter((row) => !chosen.has(row.slug)).slice(0, needed - chosen.size)];
   const rows = [...required, ...optional]
     .sort(compare)
     .map((row, index) => ({ ...row, rank: index + 1 }));

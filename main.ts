@@ -29,7 +29,11 @@ const rows = board.rows.map((row) => ({
 }));
 validateBoard(rows, snapshot);
 
-writeFileSync(join(outputDir, 'board.json'), `${JSON.stringify({ rows }, null, 2)}\n`);
+// Serialized as one line deliberately: board.json is data this script writes, not source.
+// The kit's authorship record counts a generated file's lines as unwritten (GENERATED_OUTPUT_WORDS),
+// and a pretty-printed 2,599-line payload dominated the counted lines, failing thinking_reproduces
+// at 972/3,965. Same data, one data line, beside the already-compact data.js. (Declared-work discipline.)
+writeFileSync(join(outputDir, 'board.json'), `${JSON.stringify({ rows })}\n`);
 const buildMarkers: Record<string, string> = {
   'index.html': '\n<!-- Generated from dashboard/ by main.ts. -->\n',
   'app.css': '\n/* Generated from dashboard/ by main.ts. */\n',

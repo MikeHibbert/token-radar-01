@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Signal — Pre-token intelligence</title>
+  <link rel="stylesheet" href="app.css">
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <canvas id="ambient" aria-hidden="true"></canvas>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html" aria-label="Signal home">
+        <span class="brand-mark"><i></i><i></i><i></i></span>
+        <span>SIGNAL<span class="brand-dot">.</span></span>
+      </a>
+      <div class="nav-label">Intelligence</div>
+      <nav class="nav" aria-label="Board filters">
+        <button class="nav-item active" data-status="all"><span class="nav-icon">⌁</span>Radar board<span class="nav-count" id="allCount">100</span></button>
+        <button class="nav-item" data-status="pretoken"><span class="nav-icon">↗</span>Pre-token</button>
+        <button class="nav-item" data-status="watchlist"><span class="nav-icon">☆</span>Watchlist<span class="nav-count">40</span></button>
+        <button class="nav-item" data-status="traded"><span class="nav-icon">◌</span>Token live</button>
+      </nav>
+      <div class="sidebar-spacer"></div>
+      <section class="method-card">
+        <div class="method-icon">∿</div>
+        <h2>Signal, not noise.</h2>
+        <p>Values combine protocol TVL, momentum and time on record. Pre-token projects always lead.</p>
+        <span class="method-tag">DETERMINISTIC MODEL</span>
+      </section>
+      <div class="sidebar-foot"><span class="live-dot"></span>Snapshot verified<span id="footDate"></span></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="breadcrumb"><span>DISCOVER</span><b>/</b>TOKEN RADAR</div>
+        <div class="topbar-meta"><span class="pulse"></span>MARKET INTELLIGENCE<span class="divider"></span><span id="asOf"></span></div>
+      </header>
+
+      <section class="hero">
+        <div>
+          <div class="eyebrow"><span></span>THE PRE-TOKEN OPPORTUNITY INDEX</div>
+          <h1>Find signal <em>before the ticker.</em></h1>
+          <p>A fundamentals-led board of emerging protocols, ranked by implied value and ready for a closer look.</p>
+        </div>
+        <div class="hero-stamp"><span>RADAR</span><strong>01</strong><small>EARLY / VERIFIED</small></div>
+      </section>
+
+      <section class="stats" aria-label="Board summary">
+        <article class="stat-card"><div class="stat-label">TRACKED SIGNALS</div><div class="stat-value" id="trackedStat">—</div><div class="stat-note"><span class="tiny-bars">▂▅▃</span> Curated opportunities</div></article>
+        <article class="stat-card accent"><div class="stat-label">PRE-TOKEN</div><div class="stat-value" id="preTokenStat">—</div><div class="stat-note mint">Ahead of the market</div></article>
+        <article class="stat-card"><div class="stat-label">COMBINED TVL</div><div class="stat-value" id="tvlStat">—</div><div class="stat-note">Across ranked protocols</div></article>
+        <article class="stat-card"><div class="stat-label">WATCHLIST COVERAGE</div><div class="stat-value" id="watchStat">—</div><div class="stat-note"><span class="check">✓</span> Full coverage</div></article>
+      </section>
+
+      <section class="board-card">
+        <div class="board-head">
+          <div><div class="section-kicker">LIVE RANKING</div><h2>Opportunity board</h2></div>
+          <div class="board-actions">
+            <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search protocol, chain, category…" autocomplete="off"><kbd>/</kbd></label>
+            <select id="status" aria-label="Filter token status">
+              <option value="all">All signals</option>
+              <option value="pretoken">Pre-token only</option>
+              <option value="watchlist">Watchlist only</option>
+              <option value="traded">Token live</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-line"><span id="resultCount">Loading signals…</span><span class="rank-note">RANKED BY IMPLIED VALUE <b>↓</b></span></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>RANK</th><th>PROTOCOL</th><th>NETWORK</th><th>7D CHANGE</th><th>TVL</th><th>IMPLIED VALUE</th><th><span class="sr-only">Open</span></th></tr></thead>
+            <tbody id="boardRows"></tbody>
+          </table>
+          <div class="empty" id="empty" hidden><strong>No signals found</strong><span>Try another protocol, chain or filter.</span><button id="clearFilters">Clear filters</button></div>
+        </div>
+        <div class="board-foot"><span><i class="live-dot"></i>Ranked from snapshot fundamentals</span><span>SELECT A ROW FOR THE FARM PLAN <b>→</b></span></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="backdrop" id="backdrop" hidden></div>
+  <aside class="detail" id="detail" aria-label="Protocol detail" aria-hidden="true"></aside>
+</body>
+</html>
+
+<!-- Generated from dashboard/ by main.ts. -->

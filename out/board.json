@@ -1,0 +1,2628 @@
+{
+  "rows": [
+    {
+      "slug": "bybit",
+      "name": "Bybit",
+      "implied_value_usd": 1274423855,
+      "category": "CEX",
+      "chains": [
+        "Bitcoin",
+        "Ethereum",
+        "Tron",
+        "Solana",
+        "Ripple",
+        "Binance",
+        "Mantle",
+        "Hyperliquid L1",
+        "Doge",
+        "Base",
+        "Arbitrum",
+        "Avalanche",
+        "Optimism",
+        "Aptos",
+        "Litecoin",
+        "TON",
+        "Polygon",
+        "Monad",
+        "Polkadot",
+        "Sui",
+        "Starknet",
+        "Linea",
+        "Hedera",
+        "Plasma",
+        "zkSync Era",
+        "Cosmos",
+        "Sei",
+        "Sonic",
+        "Celo",
+        "Cardano",
+        "dYdX",
+        "Stable",
+        "EOS",
+        "Manta",
+        "Klaytn",
+        "Berachain",
+        "Scroll",
+        "Taiko",
+        "Kava",
+        "Fantom",
+        "Arbitrum Nova"
+      ],
+      "tvl_usd": 13824458555,
+      "change_7d": -6.4516,
+      "years_on_record": 3.99,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 1,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Bybit; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "bitfinex",
+      "name": "Bitfinex",
+      "implied_value_usd": 1135489762,
+      "category": "CEX",
+      "chains": [
+        "Bitcoin",
+        "Ethereum",
+        "Tron",
+        "Solana",
+        "Avalanche",
+        "Litecoin",
+        "Near",
+        "Tezos",
+        "Polkadot",
+        "Polygon",
+        "Algorand",
+        "EOS",
+        "Cosmos",
+        "Aptos",
+        "Elrond",
+        "Cardano",
+        "EthereumClassic",
+        "Fantom",
+        "Zilliqa",
+        "Doge"
+      ],
+      "tvl_usd": 12570924793,
+      "change_7d": -12.8026,
+      "years_on_record": 4.01,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 2,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Bitfinex; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "binance-staked-eth",
+      "name": "Binance staked ETH",
+      "implied_value_usd": 858180468,
+      "category": "Liquid Staking",
+      "chains": [
+        "Ethereum",
+        "Binance"
+      ],
+      "tvl_usd": 7448338841,
+      "change_7d": -14.3133,
+      "years_on_record": 3.55,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 3,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Binance staked ETH; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the liquid staking strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "coinbase-bridge",
+      "name": "Coinbase Bridge",
+      "implied_value_usd": 846389824,
+      "category": "Bridge",
+      "chains": [
+        "Bitcoin",
+        "Ripple",
+        "Cardano",
+        "Doge",
+        "Litecoin"
+      ],
+      "tvl_usd": 7230430318,
+      "change_7d": -5.6616,
+      "years_on_record": 1.74,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 4,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Coinbase Bridge; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the bridge strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "bitget",
+      "name": "Bitget",
+      "implied_value_usd": 820314958,
+      "category": "CEX",
+      "chains": [
+        "Bitcoin",
+        "Solana",
+        "Ethereum",
+        "Binance",
+        "Tron",
+        "Ripple",
+        "Arbitrum",
+        "Hyperliquid L1",
+        "Base",
+        "Plasma",
+        "Optimism",
+        "Polygon",
+        "Robinhood Chain",
+        "TON",
+        "Doge",
+        "Zcash",
+        "Avalanche",
+        "Near",
+        "Bittensor",
+        "Aptos",
+        "Cardano",
+        "Pi Network",
+        "Morph",
+        "Kaspa",
+        "Litecoin",
+        "Stellar",
+        "Hedera",
+        "Polkadot",
+        "Injective",
+        "Sui",
+        "Arc",
+        "Sei",
+        "Scroll",
+        "Filecoin",
+        "ICP",
+        "Monad",
+        "Starknet",
+        "XDC",
+        "BSV Blockchain",
+        "Algorand",
+        "Canton",
+        "Arweave",
+        "Celestia",
+        "Qubic",
+        "Sonic",
+        "Conflux",
+        "zkSync Era",
+        "Terra",
+        "MegaETH",
+        "Cosmos",
+        "Cronos",
+        "Stacks",
+        "Allora",
+        "Linea",
+        "Klaytn",
+        "Kava",
+        "Thorchain",
+        "EOS",
+        "Oasis",
+        "dYdX",
+        "Mina",
+        "Fetch Hub",
+        "XION",
+        "Nervos",
+        "Babylon Genesis",
+        "Alephium",
+        "Proton",
+        "World Chain",
+        "Kusama",
+        "PlatON",
+        "Metis",
+        "Elrond",
+        "Tezos",
+        "Massa",
+        "Neo3",
+        "Ontology",
+        "Astar",
+        "Orai",
+        "Mantra",
+        "Osmosis",
+        "BandChain",
+        "Fantom",
+        "Bitcoincash",
+        "Harmony",
+        "Initia"
+      ],
+      "tvl_usd": 5514291040,
+      "change_7d": -6.8338,
+      "years_on_record": 3.92,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 5,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Bitget; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "robinhood",
+      "name": "Robinhood",
+      "implied_value_usd": 815539287,
+      "category": "CEX",
+      "chains": [
+        "Bitcoin",
+        "Ethereum",
+        "Polygon",
+        "Avalanche"
+      ],
+      "tvl_usd": 12173647267,
+      "change_7d": -11.2478,
+      "years_on_record": 0,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 6,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Robinhood; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "htx",
+      "name": "HTX",
+      "implied_value_usd": 704139128,
+      "category": "CEX",
+      "chains": [
+        "Tron",
+        "Bitcoin",
+        "Ethereum",
+        "Ripple",
+        "Doge",
+        "Solana",
+        "Cardano",
+        "Litecoin",
+        "Binance",
+        "TON",
+        "Sui",
+        "Avalanche",
+        "Arbitrum",
+        "EOS",
+        "Starknet",
+        "CORE",
+        "Optimism",
+        "Polygon",
+        "Algorand"
+      ],
+      "tvl_usd": 3748907902,
+      "change_7d": -4.906,
+      "years_on_record": 4,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 7,
+      "farm_steps": [
+        "Set up a fresh wallet for Tron; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by HTX; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "usdt0",
+      "name": "USDT0",
+      "implied_value_usd": 696806978,
+      "category": "Bridge",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 3571588038,
+      "change_7d": 6.3694,
+      "years_on_record": 1.67,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 8,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by USDT0; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the bridge strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "binance-bitcoin",
+      "name": "Binance Bitcoin",
+      "implied_value_usd": 676066463,
+      "category": "Bridge",
+      "chains": [
+        "Bitcoin"
+      ],
+      "tvl_usd": 4658084203,
+      "change_7d": -10.1725,
+      "years_on_record": 2.23,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 9,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Binance Bitcoin; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the bridge strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "wbtc",
+      "name": "WBTC",
+      "implied_value_usd": 670185162,
+      "category": "Bridge",
+      "chains": [
+        "Bitcoin"
+      ],
+      "tvl_usd": 7908800359,
+      "change_7d": -10.5215,
+      "years_on_record": 0,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 10,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by WBTC; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the bridge strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "bitstamp",
+      "name": "Bitstamp",
+      "implied_value_usd": 642878101,
+      "category": "CEX",
+      "chains": [
+        "Bitcoin",
+        "Ethereum",
+        "Ripple",
+        "Solana",
+        "Litecoin",
+        "Cardano",
+        "Avalanche",
+        "Sui",
+        "Near",
+        "XDC"
+      ],
+      "tvl_usd": 3846685048,
+      "change_7d": -10.9688,
+      "years_on_record": 3.15,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 11,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Bitstamp; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "deribit",
+      "name": "Deribit",
+      "implied_value_usd": 634999020,
+      "category": "CEX",
+      "chains": [
+        "Bitcoin",
+        "Ethereum",
+        "Solana",
+        "Ripple",
+        "Binance",
+        "EthereumPoW"
+      ],
+      "tvl_usd": 3327937264,
+      "change_7d": -9.1285,
+      "years_on_record": 4.01,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 12,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Deribit; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "gemini",
+      "name": "Gemini",
+      "implied_value_usd": 628820029,
+      "category": "CEX",
+      "chains": [
+        "Bitcoin",
+        "Ethereum"
+      ],
+      "tvl_usd": 4508154485,
+      "change_7d": -9.4072,
+      "years_on_record": 1.31,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 13,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Gemini; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "sentora-curator",
+      "name": "Sentora Curator",
+      "implied_value_usd": 566011981,
+      "category": "Risk Curators",
+      "chains": [
+        "Ethereum",
+        "Ink",
+        "Solana",
+        "Tempo"
+      ],
+      "tvl_usd": 2757585593,
+      "change_7d": 2.3672,
+      "years_on_record": 1.11,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 14,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Sentora Curator; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the risk curators strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "kucoin",
+      "name": "KuCoin",
+      "implied_value_usd": 556631809,
+      "category": "CEX",
+      "chains": [
+        "Ethereum",
+        "Bitcoin",
+        "Solana",
+        "Tron",
+        "Binance",
+        "Ripple",
+        "Arbitrum",
+        "Near",
+        "Doge",
+        "Avalanche",
+        "Cardano",
+        "Sui",
+        "Base",
+        "Optimism",
+        "TON",
+        "Aptos",
+        "EOS",
+        "Kava",
+        "Algorand",
+        "Starknet",
+        "Polkadot",
+        "Polygon",
+        "Kucoin"
+      ],
+      "tvl_usd": 2385373011,
+      "change_7d": -7.4682,
+      "years_on_record": 4.01,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 15,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by KuCoin; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "steakhouse-financial",
+      "name": "Steakhouse Financial",
+      "implied_value_usd": 554454411,
+      "category": "Risk Curators",
+      "chains": [
+        "Base",
+        "Ethereum",
+        "Robinhood Chain",
+        "Arbitrum",
+        "Solana",
+        "Monad",
+        "Arc",
+        "Katana",
+        "Polygon",
+        "Unichain",
+        "Corn"
+      ],
+      "tvl_usd": 2753981495,
+      "change_7d": -2.1935,
+      "years_on_record": 1.49,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 16,
+      "farm_steps": [
+        "Set up a fresh wallet for Base; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Steakhouse Financial; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the risk curators strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "gauntlet",
+      "name": "Gauntlet",
+      "implied_value_usd": 472597081,
+      "category": "Risk Curators",
+      "chains": [
+        "Base",
+        "Binance",
+        "Ethereum",
+        "Arbitrum",
+        "Stable",
+        "Morph",
+        "Solana",
+        "Hyperliquid L1",
+        "Polygon",
+        "Optimism",
+        "Unichain",
+        "Katana",
+        "Arc",
+        "Tempo"
+      ],
+      "tvl_usd": 1577685462,
+      "change_7d": 5.645,
+      "years_on_record": 1.49,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 17,
+      "farm_steps": [
+        "Set up a fresh wallet for Base; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Gauntlet; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the risk curators strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "crypto-com",
+      "name": "Crypto-com",
+      "implied_value_usd": 454343945,
+      "category": "CEX",
+      "chains": [
+        "Bitcoin",
+        "Ethereum",
+        "Polygon",
+        "Binance",
+        "Avalanche",
+        "Arbitrum",
+        "Optimism",
+        "Fantom"
+      ],
+      "tvl_usd": 1920527301,
+      "change_7d": -17.8437,
+      "years_on_record": 4.01,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 18,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Crypto-com; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "base-bridge",
+      "name": "Base Bridge",
+      "implied_value_usd": 434388198,
+      "category": "Canonical Bridge",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 2739183449,
+      "change_7d": -5.6082,
+      "years_on_record": 0,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 19,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Base Bridge; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the canonical bridge strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "veda",
+      "name": "Veda",
+      "implied_value_usd": 408482978,
+      "category": "Onchain Capital Allocator",
+      "chains": [
+        "Ink",
+        "Ethereum",
+        "Optimism",
+        "Monad",
+        "Plasma",
+        "Hyperliquid L1",
+        "Arbitrum",
+        "Base",
+        "Berachain",
+        "Sonic",
+        "Binance",
+        "BOB",
+        "Scroll"
+      ],
+      "tvl_usd": 1563415482,
+      "change_7d": -8.2898,
+      "years_on_record": 1.73,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 20,
+      "farm_steps": [
+        "Set up a fresh wallet for Ink; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Veda; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the onchain capital allocator strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "ccip",
+      "name": "CCIP",
+      "implied_value_usd": 406154602,
+      "category": "Bridge",
+      "chains": [
+        "Ethereum",
+        "Solana",
+        "Avalanche",
+        "Base",
+        "Hyperliquid L1",
+        "Arbitrum",
+        "Ronin",
+        "Bittensor EVM",
+        "Optimism",
+        "Pharos",
+        "BOB",
+        "Binance",
+        "0G",
+        "Astar",
+        "World Chain",
+        "zkSync Era",
+        "Polygon",
+        "Linea",
+        "HashKey Chain",
+        "Sonic",
+        "Shibarium"
+      ],
+      "tvl_usd": 1803730474,
+      "change_7d": -2.8774,
+      "years_on_record": 0.45,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 21,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by CCIP; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the bridge strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "hashkey-exchange",
+      "name": "HashKey Exchange",
+      "implied_value_usd": 380632152,
+      "category": "CEX",
+      "chains": [
+        "Bitcoin",
+        "Ethereum",
+        "Solana",
+        "Tron",
+        "Doge",
+        "Aptos",
+        "Avalanche",
+        "TON",
+        "Litecoin",
+        "Arbitrum",
+        "Optimism",
+        "Polkadot",
+        "Polygon"
+      ],
+      "tvl_usd": 1304101212,
+      "change_7d": -11.3296,
+      "years_on_record": 2.4,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 22,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by HashKey Exchange; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "usdd",
+      "name": "USDD",
+      "implied_value_usd": 366086790,
+      "category": "CDP",
+      "chains": [
+        "Tron",
+        "Ethereum",
+        "Binance"
+      ],
+      "tvl_usd": 1055793606,
+      "change_7d": -2.8062,
+      "years_on_record": 1.67,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 23,
+      "farm_steps": [
+        "Set up a fresh wallet for Tron; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by USDD; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cdp strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "aster-bridge",
+      "name": "Aster Bridge",
+      "implied_value_usd": 329460313,
+      "category": "Bridge",
+      "chains": [
+        "Binance",
+        "Ethereum",
+        "Arbitrum",
+        "Solana",
+        "Scroll"
+      ],
+      "tvl_usd": 604647744,
+      "change_7d": 4.4617,
+      "years_on_record": 2.36,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 24,
+      "farm_steps": [
+        "Set up a fresh wallet for Binance; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Aster Bridge; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the bridge strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "upshift",
+      "name": "Upshift",
+      "implied_value_usd": 309095023,
+      "category": "Onchain Capital Allocator",
+      "chains": [
+        "Ethereum",
+        "Stellar",
+        "Flare",
+        "Monad",
+        "Hyperliquid L1",
+        "Avalanche",
+        "Solana",
+        "Fluent",
+        "Base",
+        "Citrea",
+        "Sui",
+        "Plasma",
+        "Binance",
+        "Mezo",
+        "Ink"
+      ],
+      "tvl_usd": 499083733,
+      "change_7d": 8.3117,
+      "years_on_record": 1.94,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 25,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Upshift; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the onchain capital allocator strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "unit",
+      "name": "Unit",
+      "implied_value_usd": 305776536,
+      "category": "Bridge",
+      "chains": [
+        "Bitcoin",
+        "Zcash",
+        "Ethereum",
+        "Solana",
+        "Plasma",
+        "Monad",
+        "Base",
+        "Avalanche"
+      ],
+      "tvl_usd": 851821074,
+      "change_7d": -10.9726,
+      "years_on_record": 1.75,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 26,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Unit; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the bridge strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "binance-staked-sol",
+      "name": "Binance Staked SOL",
+      "implied_value_usd": 301677825,
+      "category": "Liquid Staking",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 840458087,
+      "change_7d": -14.4263,
+      "years_on_record": 2.17,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 27,
+      "farm_steps": [
+        "Set up a fresh wallet for Solana; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Binance Staked SOL; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the liquid staking strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "poloniex",
+      "name": "Poloniex",
+      "implied_value_usd": 280574593,
+      "category": "CEX",
+      "chains": [
+        "Ethereum",
+        "Ripple",
+        "Polygon",
+        "Tron",
+        "Stellar",
+        "Solana",
+        "EthereumClassic",
+        "Arbitrum",
+        "Optimism",
+        "Cardano",
+        "Bitcoin"
+      ],
+      "tvl_usd": 821121567,
+      "change_7d": -8.5461,
+      "years_on_record": 0.71,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 28,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Poloniex; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "kraken-bitcoin",
+      "name": "Kraken Bitcoin",
+      "implied_value_usd": 279134100,
+      "category": "Bridge",
+      "chains": [
+        "Bitcoin"
+      ],
+      "tvl_usd": 643200998,
+      "change_7d": -10.645,
+      "years_on_record": 2.08,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 29,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Kraken Bitcoin; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the bridge strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "liquid-collective",
+      "name": "Liquid Collective",
+      "implied_value_usd": 276740763,
+      "category": "Liquid Staking",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 545612724,
+      "change_7d": -10.8012,
+      "years_on_record": 3.25,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 30,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Liquid Collective; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the liquid staking strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "function-fbtc",
+      "name": "Function FBTC",
+      "implied_value_usd": 270206591,
+      "category": "Bridge",
+      "chains": [
+        "Bitcoin"
+      ],
+      "tvl_usd": 567461183,
+      "change_7d": -10.046,
+      "years_on_record": 2.28,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 31,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Function FBTC; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the bridge strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "bingx",
+      "name": "BingX",
+      "implied_value_usd": 267751236,
+      "category": "CEX",
+      "chains": [
+        "Binance",
+        "Bitcoin",
+        "Solana",
+        "Ethereum",
+        "Tron",
+        "TON",
+        "Ripple",
+        "Arbitrum"
+      ],
+      "tvl_usd": 508290917,
+      "change_7d": -7.3244,
+      "years_on_record": 2.35,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 32,
+      "farm_steps": [
+        "Set up a fresh wallet for Binance; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by BingX; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "polymarket-international",
+      "name": "Polymarket International",
+      "implied_value_usd": 267367242,
+      "category": "Prediction Market",
+      "chains": [
+        "Polygon"
+      ],
+      "tvl_usd": 320193439,
+      "change_7d": -1.0817,
+      "years_on_record": 5.05,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 33,
+      "farm_steps": [
+        "Set up a fresh wallet for Polygon; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Polymarket International; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the prediction market strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "korbit",
+      "name": "Korbit",
+      "implied_value_usd": 264644476,
+      "category": "CEX",
+      "chains": [
+        "Bitcoin",
+        "Ethereum",
+        "Ripple"
+      ],
+      "tvl_usd": 434884665,
+      "change_7d": -9.2091,
+      "years_on_record": 3.98,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 34,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Korbit; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "osl-exchange",
+      "name": "OSL Exchange",
+      "implied_value_usd": 244511851,
+      "category": "CEX",
+      "chains": [
+        "Bitcoin",
+        "Ethereum",
+        "Solana",
+        "Tron",
+        "Binance",
+        "Ripple",
+        "Polygon",
+        "Avalanche",
+        "Litecoin",
+        "Hyperliquid L1",
+        "Injective",
+        "Doge",
+        "Scroll",
+        "Sei",
+        "Sui",
+        "TON",
+        "Stellar",
+        "Cardano",
+        "Plasma",
+        "Base"
+      ],
+      "tvl_usd": 603794495,
+      "change_7d": -10.856,
+      "years_on_record": 0.84,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 35,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by OSL Exchange; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "coinbase-wrapped-staked-eth",
+      "name": "Coinbase Wrapped Staked ETH",
+      "implied_value_usd": 240581949,
+      "category": "Liquid Staking",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 383245462,
+      "change_7d": -13.7591,
+      "years_on_record": 4.06,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 36,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Coinbase Wrapped Staked ETH; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the liquid staking strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "cian-yield-layer",
+      "name": "CIAN Yield Layer",
+      "implied_value_usd": 238827668,
+      "category": "Yield Aggregator",
+      "chains": [
+        "Ethereum",
+        "Mantle",
+        "Arbitrum",
+        "Optimism",
+        "Base",
+        "Binance",
+        "Scroll"
+      ],
+      "tvl_usd": 280281384,
+      "change_7d": 4.6717,
+      "years_on_record": 1.99,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 37,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by CIAN Yield Layer; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the yield aggregator strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "indodax",
+      "name": "Indodax",
+      "implied_value_usd": 234908941,
+      "category": "CEX",
+      "chains": [
+        "Bitcoin",
+        "Ethereum",
+        "Solana",
+        "Binance",
+        "Tron",
+        "Optimism",
+        "Cardano",
+        "Polygon",
+        "Stellar",
+        "Base",
+        "Arbitrum",
+        "Litecoin",
+        "Avalanche",
+        "Algorand",
+        "Sui",
+        "Linea",
+        "EOS"
+      ],
+      "tvl_usd": 440186252,
+      "change_7d": -7.5444,
+      "years_on_record": 1.33,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 38,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Indodax; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "onre",
+      "name": "OnRe",
+      "implied_value_usd": 224228504,
+      "category": "RWA",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 308882355,
+      "change_7d": 0.1082,
+      "years_on_record": 1.34,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 39,
+      "farm_steps": [
+        "Set up a fresh wallet for Solana; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by OnRe; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the rwa strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "figure-markets-prime",
+      "name": "Figure Markets Prime",
+      "implied_value_usd": 220056200,
+      "category": "Lending",
+      "chains": [
+        "Provenance"
+      ],
+      "tvl_usd": 190506995,
+      "change_7d": 18.0338,
+      "years_on_record": 1.3,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 40,
+      "farm_steps": [
+        "Set up a fresh wallet for Provenance; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Figure Markets Prime; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the lending strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "rocketswap-anubis-v2",
+      "name": "RocketSwap Anubis V2",
+      "implied_value_usd": 218933990,
+      "category": "Dexs",
+      "chains": [
+        "Anubis"
+      ],
+      "tvl_usd": 350253227,
+      "change_7d": 3.7748,
+      "years_on_record": 0.38,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 41,
+      "farm_steps": [
+        "Set up a fresh wallet for Anubis; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by RocketSwap Anubis V2; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the dexs strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "bitvavo",
+      "name": "Bitvavo",
+      "implied_value_usd": 217671052,
+      "category": "CEX",
+      "chains": [
+        "Bitcoin",
+        "Ethereum",
+        "Hyperliquid L1",
+        "Base",
+        "Solana",
+        "Arbitrum",
+        "Plasma",
+        "Optimism",
+        "Linea",
+        "zkSync Era",
+        "Binance",
+        "Sonic"
+      ],
+      "tvl_usd": 326551262,
+      "change_7d": 2.1411,
+      "years_on_record": 0.64,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 42,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Bitvavo; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "forward-industries-sol",
+      "name": "Forward Industries SOL",
+      "implied_value_usd": 213300229,
+      "category": "Liquid Staking",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 312905588,
+      "change_7d": 10.2453,
+      "years_on_record": 0.12,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 43,
+      "farm_steps": [
+        "Set up a fresh wallet for Solana; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Forward Industries SOL; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the liquid staking strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "opentrade",
+      "name": "OpenTrade",
+      "implied_value_usd": 209643780,
+      "category": "RWA",
+      "chains": [
+        "Avalanche",
+        "Ethereum",
+        "Plume Mainnet"
+      ],
+      "tvl_usd": 241501527,
+      "change_7d": -1.642,
+      "years_on_record": 1.94,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 44,
+      "farm_steps": [
+        "Set up a fresh wallet for Avalanche; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by OpenTrade; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the rwa strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "robinhood-chain-bridge",
+      "name": "Robinhood Chain Bridge",
+      "implied_value_usd": 208833531,
+      "category": "Canonical Bridge",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 499624376,
+      "change_7d": -12.2692,
+      "years_on_record": 0.36,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 45,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Robinhood Chain Bridge; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the canonical bridge strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "nonce-capital",
+      "name": "Nonce Capital",
+      "implied_value_usd": 207654333,
+      "category": "Risk Curators",
+      "chains": [
+        "Ethereum",
+        "Optimism"
+      ],
+      "tvl_usd": 513783671,
+      "change_7d": -9.7377,
+      "years_on_record": 0.12,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 46,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Nonce Capital; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the risk curators strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "bitunix",
+      "name": "Bitunix",
+      "implied_value_usd": 206576199,
+      "category": "CEX",
+      "chains": [
+        "Ethereum",
+        "Bitcoin",
+        "Tron",
+        "Ripple",
+        "Binance",
+        "Arbitrum",
+        "Solana",
+        "Optimism",
+        "Avalanche",
+        "Base",
+        "TON",
+        "Polygon",
+        "Cardano",
+        "Litecoin"
+      ],
+      "tvl_usd": 262067854,
+      "change_7d": -6.8977,
+      "years_on_record": 2.21,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 47,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Bitunix; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "plume-vaults",
+      "name": "Plume Vaults",
+      "implied_value_usd": 197785574,
+      "category": "RWA",
+      "chains": [
+        "Ethereum",
+        "Plume Mainnet",
+        "Solana",
+        "Binance",
+        "Avalanche"
+      ],
+      "tvl_usd": 211537977,
+      "change_7d": -3.081,
+      "years_on_record": 2.05,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 48,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Plume Vaults; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the rwa strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "rockawayx",
+      "name": "RockawayX",
+      "implied_value_usd": 197580305,
+      "category": "Risk Curators",
+      "chains": [
+        "Ethereum",
+        "Solana",
+        "Pharos",
+        "Monad",
+        "Sei",
+        "Base",
+        "Binance",
+        "Citrea",
+        "Etherlink",
+        "Plume Mainnet"
+      ],
+      "tvl_usd": 292506628,
+      "change_7d": -2.5459,
+      "years_on_record": 0.64,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 49,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by RockawayX; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the risk curators strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "symbiotic",
+      "name": "Symbiotic",
+      "implied_value_usd": 195119665,
+      "category": "Collateral Markets",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 253923299,
+      "change_7d": -12.0318,
+      "years_on_record": 2.43,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 50,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Symbiotic; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the collateral markets strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "tonstakers-lsd",
+      "name": "Tonstakers LSD",
+      "implied_value_usd": 193280885,
+      "category": "Liquid Staking",
+      "chains": [
+        "TON"
+      ],
+      "tvl_usd": 162237575,
+      "change_7d": -1.9198,
+      "years_on_record": 3.15,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 51,
+      "farm_steps": [
+        "Set up a fresh wallet for TON; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Tonstakers LSD; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the liquid staking strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "bittensor-dtao",
+      "name": "Bittensor dTAO",
+      "implied_value_usd": 191558082,
+      "category": "Dexs",
+      "chains": [
+        "Bittensor"
+      ],
+      "tvl_usd": 376026255,
+      "change_7d": -6.5592,
+      "years_on_record": 0.15,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 52,
+      "farm_steps": [
+        "Set up a fresh wallet for Bittensor; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Bittensor dTAO; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the dexs strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "hyperithm",
+      "name": "Hyperithm",
+      "implied_value_usd": 190310822,
+      "category": "Risk Curators",
+      "chains": [
+        "Monad",
+        "Ethereum",
+        "Arbitrum",
+        "Plasma",
+        "Solana",
+        "Hyperliquid L1",
+        "Katana",
+        "Stable",
+        "XRPL EVM",
+        "Binance"
+      ],
+      "tvl_usd": 221638535,
+      "change_7d": -4.375,
+      "years_on_record": 1.49,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 53,
+      "farm_steps": [
+        "Set up a fresh wallet for Monad; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Hyperithm; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the risk curators strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "hive-protocol",
+      "name": "Hive Protocol",
+      "implied_value_usd": 183097754,
+      "category": "Chain",
+      "chains": [
+        "BSquared"
+      ],
+      "tvl_usd": 198776765,
+      "change_7d": -10.181,
+      "years_on_record": 2.53,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 54,
+      "farm_steps": [
+        "Set up a fresh wallet for BSquared; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Hive Protocol; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the chain strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "bitfi-basis",
+      "name": "BitFi Basis",
+      "implied_value_usd": 179322774,
+      "category": "Basis Trading",
+      "chains": [
+        "Binance",
+        "Ethereum",
+        "Base",
+        "Pharos",
+        "Hemi",
+        "Bitlayer",
+        "CORE"
+      ],
+      "tvl_usd": 214934379,
+      "change_7d": -10.2604,
+      "years_on_record": 1.75,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 55,
+      "farm_steps": [
+        "Set up a fresh wallet for Binance; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by BitFi Basis; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the basis trading strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "k3-capital",
+      "name": "K3 Capital",
+      "implied_value_usd": 176320030,
+      "category": "Risk Curators",
+      "chains": [
+        "Monad",
+        "Ethereum",
+        "Optimism",
+        "Hyperliquid L1",
+        "Plasma",
+        "Arbitrum",
+        "Binance",
+        "Unichain",
+        "Avalanche"
+      ],
+      "tvl_usd": 207711162,
+      "change_7d": -8.9024,
+      "years_on_record": 1.49,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 56,
+      "farm_steps": [
+        "Set up a fresh wallet for Monad; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by K3 Capital; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the risk curators strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "lofty",
+      "name": "Lofty",
+      "implied_value_usd": 176156600,
+      "category": "RWA",
+      "chains": [
+        "Algorand"
+      ],
+      "tvl_usd": 101135900,
+      "change_7d": 0.025,
+      "years_on_record": 4.28,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 57,
+      "farm_steps": [
+        "Set up a fresh wallet for Algorand; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Lofty; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the rwa strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "r25",
+      "name": "R25",
+      "implied_value_usd": 174785288,
+      "category": "RWA",
+      "chains": [
+        "Pharos",
+        "Sui"
+      ],
+      "tvl_usd": 198206607,
+      "change_7d": 0.2987,
+      "years_on_record": 0.54,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 58,
+      "farm_steps": [
+        "Set up a fresh wallet for Pharos; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by R25; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the rwa strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "lagoon",
+      "name": "Lagoon",
+      "implied_value_usd": 173443294,
+      "category": "Onchain Capital Allocator",
+      "chains": [
+        "Ethereum",
+        "Arbitrum",
+        "Base",
+        "Binance",
+        "Avalanche",
+        "Plasma",
+        "Hyperliquid L1",
+        "TAC",
+        "Hemi",
+        "Linea",
+        "Rayls",
+        "Monad",
+        "Robinhood Chain",
+        "Optimism",
+        "Katana",
+        "Sonic",
+        "Mantle",
+        "Arc",
+        "Berachain",
+        "Flare",
+        "Polygon",
+        "Unichain",
+        "World Chain"
+      ],
+      "tvl_usd": 151263522,
+      "change_7d": -3.2955,
+      "years_on_record": 1.89,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 59,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Lagoon; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the onchain capital allocator strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "gtbtc",
+      "name": "GTBTC",
+      "implied_value_usd": 173254449,
+      "category": "Restaked BTC",
+      "chains": [
+        "Bitcoin"
+      ],
+      "tvl_usd": 235254688,
+      "change_7d": -10.5689,
+      "years_on_record": 1,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 60,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by GTBTC; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the restaked btc strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "mellow-core",
+      "name": "Mellow Core",
+      "implied_value_usd": 172449511,
+      "category": "Onchain Capital Allocator",
+      "chains": [
+        "Ethereum",
+        "Robinhood Chain",
+        "RSK",
+        "Mezo",
+        "Monad"
+      ],
+      "tvl_usd": 232572763,
+      "change_7d": -8.5335,
+      "years_on_record": 0.79,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 61,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Mellow Core; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the onchain capital allocator strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "aera-v3",
+      "name": "Aera V3",
+      "implied_value_usd": 169518124,
+      "category": "Onchain Capital Allocator",
+      "chains": [
+        "Base",
+        "Morph",
+        "Ethereum",
+        "Arbitrum",
+        "Optimism"
+      ],
+      "tvl_usd": 164751329,
+      "change_7d": -4.3704,
+      "years_on_record": 1.37,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 62,
+      "farm_steps": [
+        "Set up a fresh wallet for Base; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Aera V3; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the onchain capital allocator strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "figure-markets-exchange",
+      "name": "Figure Markets Exchange",
+      "implied_value_usd": 168523601,
+      "category": "OTC Marketplace",
+      "chains": [
+        "Provenance"
+      ],
+      "tvl_usd": 131265792,
+      "change_7d": 2.284,
+      "years_on_record": 1.3,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 63,
+      "farm_steps": [
+        "Set up a fresh wallet for Provenance; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Figure Markets Exchange; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the otc marketplace strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "galaxy-curation",
+      "name": "Galaxy Curation",
+      "implied_value_usd": 167337211,
+      "category": "Risk Curators",
+      "chains": [
+        "Arc",
+        "Ethereum",
+        "Base"
+      ],
+      "tvl_usd": 129994276,
+      "change_7d": 11.2334,
+      "years_on_record": 0.48,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 64,
+      "farm_steps": [
+        "Set up a fresh wallet for Arc; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Galaxy Curation; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the risk curators strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "stacks-sbtc",
+      "name": "Stacks sBTC",
+      "implied_value_usd": 165513071,
+      "category": "Bridge",
+      "chains": [
+        "Bitcoin"
+      ],
+      "tvl_usd": 168592297,
+      "change_7d": -10.6406,
+      "years_on_record": 1.9,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 65,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Stacks sBTC; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the bridge strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "curvance",
+      "name": "Curvance",
+      "implied_value_usd": 162247100,
+      "category": "Lending",
+      "chains": [
+        "Monad"
+      ],
+      "tvl_usd": 136345059,
+      "change_7d": 0.6775,
+      "years_on_record": 0.96,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 66,
+      "farm_steps": [
+        "Set up a fresh wallet for Monad; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Curvance; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the lending strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "saturn",
+      "name": "Saturn",
+      "implied_value_usd": 159309625,
+      "category": "Stablecoin Wrapper",
+      "chains": [
+        "Ethereum",
+        "Monad",
+        "Binance"
+      ],
+      "tvl_usd": 154313682,
+      "change_7d": -0.7486,
+      "years_on_record": 0.6,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 67,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Saturn; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the stablecoin wrapper strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "clearstar",
+      "name": "Clearstar",
+      "implied_value_usd": 159232044,
+      "category": "Risk Curators",
+      "chains": [
+        "Flare",
+        "Base",
+        "Ethereum",
+        "Monad",
+        "Hyperliquid L1",
+        "Starknet",
+        "Katana",
+        "Arbitrum",
+        "Hemi",
+        "Unichain",
+        "Polygon"
+      ],
+      "tvl_usd": 161773491,
+      "change_7d": -10.0936,
+      "years_on_record": 1.49,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 68,
+      "farm_steps": [
+        "Set up a fresh wallet for Flare; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Clearstar; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the risk curators strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "sthype",
+      "name": "stHYPE",
+      "implied_value_usd": 158486140,
+      "category": "Liquid Staking",
+      "chains": [
+        "Hyperliquid L1"
+      ],
+      "tvl_usd": 162909230,
+      "change_7d": -9.4552,
+      "years_on_record": 1.32,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 69,
+      "farm_steps": [
+        "Set up a fresh wallet for Hyperliquid L1; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by stHYPE; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the liquid staking strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "dfdv-staked-sol",
+      "name": "DFDV Staked SOL",
+      "implied_value_usd": 157945685,
+      "category": "Liquid Staking",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 170420388,
+      "change_7d": -11.1324,
+      "years_on_record": 1.31,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 70,
+      "farm_steps": [
+        "Set up a fresh wallet for Solana; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by DFDV Staked SOL; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the liquid staking strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "nexus-btc",
+      "name": "Nexus BTC",
+      "implied_value_usd": 157214594,
+      "category": "Bridge",
+      "chains": [
+        "Bitcoin"
+      ],
+      "tvl_usd": 226481013,
+      "change_7d": -33.3678,
+      "years_on_record": 1.95,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 71,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Nexus BTC; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the bridge strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "jpool",
+      "name": "JPool",
+      "implied_value_usd": 155954193,
+      "category": "Liquid Staking",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 99134763,
+      "change_7d": -11.5036,
+      "years_on_record": 4.87,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 72,
+      "farm_steps": [
+        "Set up a fresh wallet for Solana; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by JPool; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the liquid staking strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "fassets",
+      "name": "FAssets",
+      "implied_value_usd": 148683994,
+      "category": "Bridge",
+      "chains": [
+        "Ripple",
+        "Flare"
+      ],
+      "tvl_usd": 156600598,
+      "change_7d": -12.5566,
+      "years_on_record": 1.14,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 73,
+      "farm_steps": [
+        "Set up a fresh wallet for Ripple; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by FAssets; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the bridge strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "ourbit",
+      "name": "Ourbit",
+      "implied_value_usd": 147807107,
+      "category": "CEX",
+      "chains": [
+        "Bitcoin",
+        "Solana",
+        "Ethereum",
+        "Binance",
+        "Tron",
+        "Arbitrum",
+        "Avalanche",
+        "Optimism"
+      ],
+      "tvl_usd": 98527523,
+      "change_7d": -5.39,
+      "years_on_record": 2.01,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 74,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Ourbit; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "armitage-by-wintermute",
+      "name": "Armitage by Wintermute",
+      "implied_value_usd": 147498179,
+      "category": "Risk Curators",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 103480212,
+      "change_7d": 5.7711,
+      "years_on_record": 0.49,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 75,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Armitage by Wintermute; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the risk curators strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "helius-staked-sol",
+      "name": "Helius Staked SOL",
+      "implied_value_usd": 147004069,
+      "category": "Liquid Staking",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 84499668,
+      "change_7d": -2.9895,
+      "years_on_record": 2.25,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 76,
+      "farm_steps": [
+        "Set up a fresh wallet for Solana; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Helius Staked SOL; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the liquid staking strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "world-chain-bridge",
+      "name": "World Chain Bridge",
+      "implied_value_usd": 146606897,
+      "category": "Canonical Bridge",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 261654428,
+      "change_7d": -15.4231,
+      "years_on_record": 0,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 77,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by World Chain Bridge; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the canonical bridge strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "b14g",
+      "name": "b14g",
+      "implied_value_usd": 145390059,
+      "category": "Restaking",
+      "chains": [
+        "Bitcoin",
+        "CORE",
+        "Babylon Genesis"
+      ],
+      "tvl_usd": 173941404,
+      "change_7d": -28.5327,
+      "years_on_record": 1.9,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 78,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by b14g; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the restaking strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "lightning-network",
+      "name": "Lightning Network",
+      "implied_value_usd": 144697105,
+      "category": "Payments",
+      "chains": [
+        "Bitcoin"
+      ],
+      "tvl_usd": 217862346,
+      "change_7d": -10.1445,
+      "years_on_record": 0,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 79,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Lightning Network; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the payments strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "theo-network-thusd",
+      "name": "Theo Network thUSD",
+      "implied_value_usd": 144520619,
+      "category": "RWA",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 138588449,
+      "change_7d": 0.0059,
+      "years_on_record": 0.18,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 80,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Theo Network thUSD; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the rwa strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "extended-perps",
+      "name": "Extended Perps",
+      "implied_value_usd": 144404625,
+      "category": "Derivatives",
+      "chains": [
+        "Arc",
+        "Ethereum",
+        "Starknet"
+      ],
+      "tvl_usd": 96412875,
+      "change_7d": -4.8674,
+      "years_on_record": 1.68,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 81,
+      "farm_steps": [
+        "Set up a fresh wallet for Arc; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Extended Perps; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the derivatives strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "defi-saver-asset-management",
+      "name": "Defi Saver Asset Management",
+      "implied_value_usd": 144349065,
+      "category": "CDP Manager",
+      "chains": [
+        "Ethereum",
+        "Arbitrum",
+        "Optimism",
+        "Base"
+      ],
+      "tvl_usd": 276366296,
+      "change_7d": -19.5797,
+      "years_on_record": 0,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 82,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Defi Saver Asset Management; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cdp manager strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "tydro",
+      "name": "Tydro",
+      "implied_value_usd": 143686813,
+      "category": "Lending",
+      "chains": [
+        "Ink"
+      ],
+      "tvl_usd": 111314194,
+      "change_7d": -4.8885,
+      "years_on_record": 1.08,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 83,
+      "farm_steps": [
+        "Set up a fresh wallet for Ink; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Tydro; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the lending strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "phantom-sol",
+      "name": "Phantom SOL",
+      "implied_value_usd": 142096445,
+      "category": "Liquid Staking",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 127520855,
+      "change_7d": -13.1781,
+      "years_on_record": 1.49,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 84,
+      "farm_steps": [
+        "Set up a fresh wallet for Solana; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Phantom SOL; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the liquid staking strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "exsat-staking-btc",
+      "name": "exSat Staking BTC",
+      "implied_value_usd": 141778143,
+      "category": "Bridge",
+      "chains": [
+        "Bitcoin"
+      ],
+      "tvl_usd": 143045410,
+      "change_7d": -22.5085,
+      "years_on_record": 2.03,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 85,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by exSat Staking BTC; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the bridge strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "pionex",
+      "name": "Pionex",
+      "implied_value_usd": 140684884,
+      "category": "CEX",
+      "chains": [
+        "Bitcoin",
+        "Ethereum",
+        "Binance",
+        "Solana",
+        "Tron",
+        "Arbitrum",
+        "Avalanche",
+        "Optimism"
+      ],
+      "tvl_usd": 104484412,
+      "change_7d": -12.4072,
+      "years_on_record": 2.18,
+      "has_token": false,
+      "watchlist": false,
+      "symbol": null,
+      "rank": 86,
+      "farm_steps": [
+        "Set up a fresh wallet for Bitcoin; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Pionex; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cex strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "valos",
+      "name": "Valos",
+      "implied_value_usd": 135847525,
+      "category": "RWA",
+      "chains": [
+        "Monad"
+      ],
+      "tvl_usd": 106328133,
+      "change_7d": 0.1453,
+      "years_on_record": 0.31,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 87,
+      "farm_steps": [
+        "Set up a fresh wallet for Monad; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Valos; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the rwa strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "ember",
+      "name": "Ember",
+      "implied_value_usd": 133544499,
+      "category": "RWA",
+      "chains": [
+        "Ethereum",
+        "Sui",
+        "Base",
+        "Pharos",
+        "Monad",
+        "Arbitrum"
+      ],
+      "tvl_usd": 90012351,
+      "change_7d": -5.9593,
+      "years_on_record": 1.16,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 88,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Ember; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the rwa strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "infinifi",
+      "name": "infiniFi",
+      "implied_value_usd": 131480643,
+      "category": "Yield",
+      "chains": [
+        "Ethereum",
+        "Monad",
+        "Base"
+      ],
+      "tvl_usd": 70716524,
+      "change_7d": -3.2771,
+      "years_on_record": 1.46,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 89,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by infiniFi; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the yield strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "tori-finance",
+      "name": "Tori Finance",
+      "implied_value_usd": 131033094,
+      "category": "Basis Trading",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 77392441,
+      "change_7d": 4.6366,
+      "years_on_record": 0.39,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 90,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Tori Finance; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the basis trading strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "gami-labs",
+      "name": "Gami Labs",
+      "implied_value_usd": 130217823,
+      "category": "Risk Curators",
+      "chains": [
+        "Stellar",
+        "Ethereum",
+        "Base",
+        "Flare",
+        "Avalanche",
+        "Robinhood Chain",
+        "Hemi"
+      ],
+      "tvl_usd": 63109489,
+      "change_7d": 9.0271,
+      "years_on_record": 0.46,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 91,
+      "farm_steps": [
+        "Set up a fresh wallet for Stellar; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Gami Labs; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the risk curators strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "doppler-finance",
+      "name": "Doppler Finance",
+      "implied_value_usd": 129156591,
+      "category": "CeDeFi",
+      "chains": [
+        "Ripple",
+        "Ethereum"
+      ],
+      "tvl_usd": 93316487,
+      "change_7d": -14.4873,
+      "years_on_record": 1.75,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 92,
+      "farm_steps": [
+        "Set up a fresh wallet for Ripple; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Doppler Finance; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the cedefi strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "keyrock",
+      "name": "Keyrock",
+      "implied_value_usd": 122017506,
+      "category": "Risk Curators",
+      "chains": [
+        "Arc",
+        "Ethereum"
+      ],
+      "tvl_usd": 83070632,
+      "change_7d": -0.5971,
+      "years_on_record": 0.2,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 93,
+      "farm_steps": [
+        "Set up a fresh wallet for Arc; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Keyrock; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the risk curators strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "reti-pooling",
+      "name": "Reti Pooling",
+      "implied_value_usd": 120859476,
+      "category": "Staking Pool",
+      "chains": [
+        "Algorand"
+      ],
+      "tvl_usd": 65254391,
+      "change_7d": -10.6865,
+      "years_on_record": 1.8,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 94,
+      "farm_steps": [
+        "Set up a fresh wallet for Algorand; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Reti Pooling; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the staking pool strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "axis",
+      "name": "Axis",
+      "implied_value_usd": 120667330,
+      "category": "Basis Trading",
+      "chains": [
+        "Ethereum"
+      ],
+      "tvl_usd": 70145354,
+      "change_7d": 2.3316,
+      "years_on_record": 0.24,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 95,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Axis; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the basis trading strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "tulipa-capital",
+      "name": "Tulipa Capital",
+      "implied_value_usd": 112410602,
+      "category": "Risk Curators",
+      "chains": [
+        "Ethereum",
+        "Base",
+        "Berachain",
+        "Avalanche",
+        "BOB",
+        "Binance",
+        "Monad",
+        "TAC"
+      ],
+      "tvl_usd": 52404471,
+      "change_7d": -9.3511,
+      "years_on_record": 1.49,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 96,
+      "farm_steps": [
+        "Set up a fresh wallet for Ethereum; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Tulipa Capital; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the risk curators strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "yuzu-money",
+      "name": "Yuzu Money",
+      "implied_value_usd": 110691846,
+      "category": "Yield",
+      "chains": [
+        "Plasma",
+        "Monad",
+        "Ethereum"
+      ],
+      "tvl_usd": 57346091,
+      "change_7d": -9.0455,
+      "years_on_record": 1,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 97,
+      "farm_steps": [
+        "Set up a fresh wallet for Plasma; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Yuzu Money; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the yield strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "noble",
+      "name": "Noble",
+      "implied_value_usd": 110553317,
+      "category": "Chain",
+      "chains": [
+        "Noble"
+      ],
+      "tvl_usd": 83040073,
+      "change_7d": -5.2314,
+      "years_on_record": 0,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 98,
+      "farm_steps": [
+        "Set up a fresh wallet for Noble; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Noble; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the chain strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "firelight",
+      "name": "Firelight",
+      "implied_value_usd": 100560732,
+      "category": "Insurance",
+      "chains": [
+        "Flare"
+      ],
+      "tvl_usd": 51272081,
+      "change_7d": -14.4069,
+      "years_on_record": 0.93,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 99,
+      "farm_steps": [
+        "Set up a fresh wallet for Flare; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Firelight; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the insurance strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    },
+    {
+      "slug": "mezo-earn",
+      "name": "Mezo Earn",
+      "implied_value_usd": 98734054,
+      "category": "Governance Incentives",
+      "chains": [
+        "Mezo"
+      ],
+      "tvl_usd": 53638061,
+      "change_7d": -12.2175,
+      "years_on_record": 0.51,
+      "has_token": false,
+      "watchlist": true,
+      "symbol": null,
+      "rank": 100,
+      "farm_steps": [
+        "Set up a fresh wallet for Mezo; transfer in $60, keep $10 for gas, and allow 15 minutes for confirmation.",
+        "Swap $25 into an asset accepted by Mezo Earn; expect 5 minutes and cap swap plus network costs at $6.",
+        "Deposit $25 into the governance incentives strategy, then review it after 24 hours; keep $5 available to exit."
+      ]
+    }
+  ]
+}

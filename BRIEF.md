@@ -5,11 +5,12 @@ every file yourself. Do not copy `starter\main.ts`, `starter\lib\` or `starter\d
 
 **Do not read `RULES.txt`** (it is very large and will stall you). This brief is the contract.
 
-Shell is PowerShell on Windows. Exact paths:
-- KIT  `C:\Users\Mike\Documents\Python\Andrew\.kit-r6\kit`
-- Snapshot `C:\Users\Mike\Documents\Python\Andrew\.kit-r6\kit\input\snapshot.json`
-- CLI  `C:\Users\Mike\Documents\Python\Andrew\.kit-r6\kit\cli\makefun.mjs`
-- Chrome `C:\Program Files\Google\Chrome\Application\chrome.exe`
+Shell is PowerShell on Windows. Exact paths (the workspace is shown as `<WORKSPACE>`, because this brief
+is published with the entry):
+- KIT  `<WORKSPACE>\.kit-r6\kit`
+- Snapshot `<WORKSPACE>\.kit-r6\kit\input\snapshot.json`
+- CLI  `<WORKSPACE>\.kit-r6\kit\cli\makefun.mjs`
+- Chrome `chrome.exe`
 
 ## The contract
 `snapshot.json` = `{ as_of, source, floor_usd, protocols: [ {slug,name,category,chains,tvl_usd,change_7d,mcap_usd,listed_at,gecko_id,symbol} ], watchlist: [slug] }`
@@ -39,16 +40,16 @@ Run:
 ```
 mkdir out -Force
 $env:MAKEFUN_OUTPUT_DIR="out"
-node main.ts --input "C:\Users\Mike\Documents\Python\Andrew\.kit-r6\kit\input\snapshot.json"
+node main.ts --input "<WORKSPACE>\.kit-r6\kit\input\snapshot.json"
 ```
 Screenshots:
 ```
-& "C:\Program Files\Google\Chrome\Application\chrome.exe" --headless=new --disable-gpu --hide-scrollbars --window-size=1440,900 --screenshot="screenshots\1-board.png" "file:///C:/Users/Mike/Documents/Python/Andrew/.kit-r6/entry-fresh-01/out/dashboard/index.html"
+& "chrome.exe" --headless=new --disable-gpu --hide-scrollbars --window-size=1440,900 --screenshot="screenshots\1-board.png" "file:///<WORKSPACE>/.kit-r6/entry-fresh-01/out/dashboard/index.html"
 ```
 (and `2-detail.png`, `3-filtered.png` via a query flag your page reads).
 Check:
 ```
-node "C:\Users\Mike\Documents\Python\Andrew\.kit-r6\kit\cli\makefun.mjs" check --kit "C:\Users\Mike\Documents\Python\Andrew\.kit-r6\kit" --repo . --worktree
+node "<WORKSPACE>\.kit-r6\kit\cli\makefun.mjs" check --kit "<WORKSPACE>\.kit-r6\kit" --repo . --worktree
 ```
 Iterate until these seven rows pass: dashboard_files, board_file, sorted_by_value, coverage,
 farm_steps, screenshots, dossier_matches. Transcript rows will say none are bundled — expected, ignore.

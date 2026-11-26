@@ -81,6 +81,25 @@ def main() -> int:
     expected = expect_arg if expect_arg is not None else len(board_rows)
     first_name = _row_name(board_rows[0]) if board_rows else None
 
+    # WHY (work_7dfd321917-s2, declared-work discipline): a board with no rows is a NAMED failure,
+    # not a vacuous pass. Without this, `--expect 0` (or a board.json that was blanked) makes the
+    # count assertion 0 == 0 and the row passes a dashboard that painted nothing - the exact false
+    # pass this row exists to prevent, one layer down. The gate derives its expectation from the
+    # snapshot, so a genuinely empty snapshot is a broken build, not a green one.
+    if expected == 0:
+        print(json.dumps({
+            "ok": False,
+            "error": "board-empty: expected 0 rows, so a blank dashboard cannot be distinguished from a correct one",
+            "page_error": None,
+            "expected": 0,
+            "tbody_count": None,
+            "empty_hidden": None,
+            "detail_visible": False,
+            "detail_name": None,
+            "first_name": None,
+        }))
+        return 1
+
     # WHY (work_7dfd321917, proof obligation): the page reads out/dashboard/data.js, not
     # board.json, so a blank board fed only to board.json would still paint the old rows and
     # the row would pass a blank board - proving nothing. When the caller supplies a board
@@ -158,7 +177,24 @@ def main() -> int:
                 # deferred scripts one turn to run before counting anything.
                 page.wait_for_timeout(250)
 
+                # WHY (work_7dfd321917-s2, declared-work discipline): the incident this row exists
+                # for was a temporal-dead-zone throw BEFORE first paint. A page that throws and then
+                # paints nothing is caught by the count, but a page that throws and still paints a
+                # stale/partial DOM would slip through. Recording the exception by name lets the gate
+                # say "dashboard threw before paint: <message>" instead of "unknown error".
+                page_errors: list[str] = []
+                page.on("pageerror", lambda err: page_errors.append(str(err)))
+
                 tbody_count = page.locator("#boardRows tr[data-slug]").count()
+                # WHY (work_7dfd321917-s2, declared-work discipline): the empty-state element is
+                # the page's own admission that it has nothing to show. A dashboard that paints
+                # zero rows AND shows its empty state is blank; the count assertion catches it,
+                # but naming the empty state in the verdict lets the gate say "blank dashboard"
+                # rather than only "rendered 0 tbody rows".
+                empty_visible = page.evaluate(
+                    "() => { const el = document.getElementById('empty');"
+                    " return el ? !(el.hidden === true || getComputedStyle(el).display === 'none') : false; }"
+                )
                 empty_hidden = page.evaluate(
                     "() => { const el = document.getElementById('empty');"
                     " return el ? (el.hidden === true || getComputedStyle(el).display === 'none') : null; }"
@@ -176,8 +212,21 @@ def main() -> int:
                 # WHY (work_7dfd321917): ok is gated on the count, not just on "the browser
                 # launched". A probe that reports ok:true while the DOM is empty is the same
                 # false pass this row exists to prevent.
+                # WHY (work_7dfd321917-s2, declared-work discipline): the probe's own exit code
+                # must carry the verdict. It printed ok:false for a blank board but still exited
+                # 0, so a caller reading the exit status (or a shell `&&` chain) saw a pass - the
+                # same false pass this row exists to prevent, one layer down. Non-zero here means
+                # "the page did not paint what the board says it should".
+                # WHY (work_7dfd321917-s2, declared-work discipline): a blank dashboard is a
+                # named failure even when the count happens to agree with a blanked expectation.
+                # `blank` is true when the page painted nothing while claiming to be empty - the
+                # signature of the Lesson 16 incident (a throw before first paint).
+                blank = tbody_count == 0 and empty_visible
+                ok = tbody_count == expected and not page_errors and not blank
                 print(json.dumps({
-                    "ok": tbody_count == expected,
+                    "ok": ok,
+                    "blank": blank,
+                    "page_error": page_errors[0] if page_errors else None,
                     "expected": expected,
                     "tbody_count": tbody_count,
                     "empty_hidden": empty_hidden,
@@ -185,7 +234,7 @@ def main() -> int:
                     "detail_name": detail_name,
                     "first_name": first_name,
                 }))
-                return 0
+                return 0 if ok else 1
             finally:
                 browser.close()
     except Exception as error:  # noqa: BLE001 - a browser that cannot render is a named failure

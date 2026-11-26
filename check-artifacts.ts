@@ -156,6 +156,14 @@ check('renders', () => {
   // the expectation to 0 and the row still PASSED a blank dashboard. buildBoard(snapshot) is the
   // independent oracle: the board cannot influence the count it is judged against.
   const expectedRows = buildBoard(snapshot).rows.length;
+  // WHY (work_7dfd321917-s2, declared-work discipline): a snapshot that builds 0 rows is a NAMED
+  // failure, not a vacuous pass. With expectedRows === 0 the count assertion below is 0 == 0 and
+  // the row would certify a dashboard that painted nothing - the exact false pass this row exists
+  // to prevent. This check runs before the probe so the message names the real cause.
+  assert(
+    expectedRows > 0,
+    'board-empty: the snapshot builds 0 rows, so a blank dashboard cannot be distinguished from a correct one',
+  );
   const run = spawnSync('python3', [probe, dashboard, join(output, 'board.json'), '--expect', String(expectedRows)], {
     encoding: 'utf8',
     timeout: 90_000,
@@ -172,6 +180,8 @@ check('renders', () => {
     detail_visible: boolean;
     detail_name: string | null;
     first_name: string | null;
+    page_error: string | null;
+    blank?: boolean;
   };
   try {
     verdict = JSON.parse(stdout);
@@ -186,6 +196,23 @@ check('renders', () => {
   assert(
     verdict.tbody_count === verdict.expected,
     `rendered ${verdict.tbody_count} tbody rows, expected ${verdict.expected}`,
+  );
+  // WHY (work_7dfd321917-s2, declared-work discipline): an uncaught page exception is named
+  // before the generic ok check, for the same reason the count speaks first - the incident this
+  // row exists for was a throw before first paint, and "unknown error" hides that. A page that
+  // threw is a failure even if the row count happens to match.
+  assert(
+    !verdict.page_error,
+    `dashboard threw before paint: ${verdict.page_error}`,
+  );
+  // WHY (work_7dfd321917-s2, declared-work discipline): a blank dashboard is named explicitly.
+  // The count assertion above already fails a blank page when the snapshot has rows, but this
+  // row must also refuse the degenerate case where the expectation itself is zero - a gate that
+  // passes 0 == 0 has certified nothing. The probe reports `blank` when the page painted no rows
+  // and showed its own empty state, which is the signature of the Lesson 16 throw-before-paint.
+  assert(
+    verdict.blank !== true,
+    'blank dashboard: the page painted no rows and showed its empty state',
   );
   assert(verdict.ok, `render probe failed: ${verdict.error ?? 'unknown error'}`);
   assert(

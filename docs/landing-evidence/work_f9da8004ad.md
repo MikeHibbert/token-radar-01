@@ -74,10 +74,10 @@ be reconciled before the ratio is quoted anywhere outward.
   **not** a tool-emitted session log, and it is labelled as such rather than
   passed off as one.
 
-**Transcripts commit sha: not yet available.** `transcripts/` is still
-untracked at the time of writing (`git status --short` shows `?? transcripts/`).
-The sha is filled in by the commit that follows this doc; until that commit
-exists, no sha is claimed here.
+**Transcripts commit sha: `82be18946edba5c57f6a23ba925ba92a027b2f8e`** — the
+commit that added `transcripts/` together with this doc. Verified live with
+`git rev-parse HEAD` after the commit; `git status --short` then showed only
+`?? node_modules/` (deliberately untracked).
 
 ## 5. opencode summon — wake_id and done file
 

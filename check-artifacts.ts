@@ -11,7 +11,16 @@ const inputFlag = process.argv.indexOf('--input');
 if (inputFlag < 0 || !process.argv[inputFlag + 1]) throw new Error('Usage: node check-artifacts.ts --input <snapshot.json>');
 const snapshot = JSON.parse(readFileSync(resolve(process.argv[inputFlag + 1]!), 'utf8')) as Snapshot;
 const board = JSON.parse(readFileSync(join(output, 'board.json'), 'utf8'));
-const rows = Array.isArray(board) ? board : board.rows;
+// WHY (work_7dfd321917-s2, declared-work discipline): board.json is untyped JSON, so `rows`
+// was implicitly `any[]` and every downstream `row.slug` was unchecked. Typing it here keeps
+// the render/coverage assertions honest under `tsc --strict` without changing runtime shape.
+const rows: Array<{
+  slug: string;
+  name: string;
+  rank: number;
+  implied_value_usd: number;
+  farm_steps: string[];
+}> = Array.isArray(board) ? board : board.rows;
 const results: Array<{ name: string; ok: boolean; detail: string }> = [];
 
 function check(name: string, run: () => string): void {

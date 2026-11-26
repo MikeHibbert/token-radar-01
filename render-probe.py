@@ -172,6 +172,14 @@ def main() -> int:
             browser = playwright.chromium.launch(args=["--no-sandbox"])
             try:
                 page = browser.new_page(viewport={"width": 1440, "height": 900})
+                # WHY (work_7dfd321917-s2, declared-work discipline): the pageerror listener MUST be
+                # attached before navigation. It was registered after goto() and after the 250ms
+                # settle, so every exception thrown during load - exactly the temporal-dead-zone
+                # throw this row exists to catch - had already fired and was never recorded. Measured
+                # 26 Nov 2026: a dashboard with an injected `const reviewHours = farmSteps()` TDZ
+                # throw still reported ok:true with 100 rows, because the listener was too late.
+                page_errors: list[str] = []
+                page.on("pageerror", lambda err: page_errors.append(str(err)))
                 page.goto(index.as_uri(), wait_until="load")
                 # The page is a single IIFE that paints synchronously on load; give the
                 # deferred scripts one turn to run before counting anything.
@@ -182,9 +190,6 @@ def main() -> int:
                 # paints nothing is caught by the count, but a page that throws and still paints a
                 # stale/partial DOM would slip through. Recording the exception by name lets the gate
                 # say "dashboard threw before paint: <message>" instead of "unknown error".
-                page_errors: list[str] = []
-                page.on("pageerror", lambda err: page_errors.append(str(err)))
-
                 tbody_count = page.locator("#boardRows tr[data-slug]").count()
                 # WHY (work_7dfd321917-s2, declared-work discipline): the empty-state element is
                 # the page's own admission that it has nothing to show. A dashboard that paints

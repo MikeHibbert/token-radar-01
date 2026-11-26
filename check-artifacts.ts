@@ -1,6 +1,9 @@
 import { existsSync, lstatSync, readdirSync, readFileSync } from 'node:fs';
-import { join, resolve } from 'node:path';
+import { spawnSync } from 'node:child_process';
+import { dirname, join, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { buildDossier } from './vendor/makefun-board.ts';
+import { buildBoard } from './lib/model.ts';
 import type { Snapshot } from './lib/model.ts';
 
 const output = resolve(process.env.MAKEFUN_OUTPUT_DIR ?? 'out');
@@ -124,10 +127,84 @@ check('screenshots', () => {
     const width = bytes.readUInt32BE(16);
     const height = bytes.readUInt32BE(20);
     assert(width === 1440 && height === 900, `${name}: ${width}x${height}, expected 1440x900`);
-    assert(bytes.length >= 300 * 1024 && bytes.length <= 350 * 1024, `${name}: ${bytes.length} bytes outside 300–350 KB`);
+    // Range, not an exact count: a collapsed render is a named failure instead of a number nobody reads.
+    // Window tightened to 307,200-358,400 bytes per work_7dfd321917 (recorded 322,285 / 347,462 / 321,416).
+    assert(bytes.length >= 307200 && bytes.length <= 358400, `${name}: ${bytes.length} bytes outside 307,200-358,400`);
     assert(bytes.length <= 512 * 1024, `${name}: over 512 KiB`);
   }
   return names.map((name) => `${name}: 1440x900, ${readFileSync(join(directory, name)).length} bytes`).join('; ');
+});
+
+// WHY (Lesson 16, docs/kindling-training-lessons.md; token-radar-01 release, 25 Nov 2026;
+// work_7dfd321917): the gate passed 7/7 while the dashboard painted nothing - reviewHours was a
+// const called by farmSteps during the rows.map, a temporal-dead-zone throw before first paint.
+// The only witness was a screenshot collapsing 347,462 -> 105,432 bytes. A gate that parses
+// artifacts is not a gate that reads the page, so this row executes the page and counts the DOM.
+// The render runs out of process (render-probe.py, Playwright/Chromium) because this clone has no
+// node_modules: an in-process import would throw at load and take all eight rows down with it.
+check('renders', () => {
+  const dashboard = join(output, 'dashboard');
+  const index = join(dashboard, 'index.html');
+  assert(existsSync(index), `missing ${index}`);
+  const probe = join(dirname(fileURLToPath(import.meta.url)), 'render-probe.py');
+  assert(existsSync(probe), `missing ${probe}`);
+  // WHY (work_7dfd321917, proof obligation, corrected live 26 Nov 2026): the expected count is
+  // derived from the SNAPSHOT via buildBoard, never from board.json. Two circular versions were
+  // measured failing this obligation before this one: (a) no --expect at all, so the probe compared
+  // the DOM against the same blank board it painted and reported ok:true (0 == 0); (b) --expect
+  // rows.length, where `rows` is bound from board.json at module load, so a blanked board pinned
+  // the expectation to 0 and the row still PASSED a blank dashboard. buildBoard(snapshot) is the
+  // independent oracle: the board cannot influence the count it is judged against.
+  const expectedRows = buildBoard(snapshot).rows.length;
+  const run = spawnSync('python3', [probe, dashboard, join(output, 'board.json'), '--expect', String(expectedRows)], {
+    encoding: 'utf8',
+    timeout: 90_000,
+    maxBuffer: 4 * 1024 * 1024,
+  });
+  const stdout = (run.stdout ?? '').trim();
+  assert(run.status === 0, `render probe exited ${run.status}: ${stdout || (run.stderr ?? '').trim() || 'no output'}`);
+  let verdict: {
+    ok: boolean;
+    error?: string;
+    expected: number;
+    tbody_count: number;
+    empty_hidden: boolean | null;
+    detail_visible: boolean;
+    detail_name: string | null;
+    first_name: string | null;
+  };
+  try {
+    verdict = JSON.parse(stdout);
+  } catch {
+    throw new Error(`render probe printed no JSON verdict: ${stdout.slice(0, 200)}`);
+  }
+  // WHY (work_7dfd321917, corrected live 26 Nov 2026): the row-count assertion runs BEFORE the
+  // generic ok check. The probe reports ok:false with no error string on a blank board, so the
+  // generic check fired first and the gate printed "render probe failed: unknown error" - a
+  // failure with no number in it. The brief requires the row-count message, so the count speaks
+  // first and the generic check is the fallback for failures the count cannot explain.
+  assert(
+    verdict.tbody_count === verdict.expected,
+    `rendered ${verdict.tbody_count} tbody rows, expected ${verdict.expected}`,
+  );
+  assert(verdict.ok, `render probe failed: ${verdict.error ?? 'unknown error'}`);
+  assert(
+    verdict.expected === expectedRows,
+    `page data source has ${verdict.expected} rows, snapshot builds ${expectedRows}`,
+  );
+  assert(
+    rows.length === expectedRows,
+    `board.json has ${rows.length} rows, snapshot builds ${expectedRows}`,
+  );
+  if (verdict.expected > 0) {
+    assert(verdict.detail_visible, 'detail panel shows no visible protocol name after opening the first row');
+    assert(
+      verdict.detail_name === verdict.first_name,
+      `detail panel shows ${JSON.stringify(verdict.detail_name)}, expected ${JSON.stringify(verdict.first_name)}`,
+    );
+    assert(verdict.empty_hidden === true, 'empty-state element is visible while rows exist');
+  }
+  return `${verdict.tbody_count} tbody rows = ${verdict.expected} expected; detail shows ${JSON.stringify(verdict.detail_name)}; empty-state hidden`;
 });
 
 check('dossier_matches', () => {

@@ -45,21 +45,23 @@ All three sit inside 307,200–358,400. These are the same bytes the grader's
 
 ## 3. Authorship ratio — as currently measured
 
-Measured with `git log --format='%an <%ae>' | sort | uniq -c | sort -rn` over
-12 commits on this branch:
+Re-measured live in the VERIFY pass of this claim (the earlier figure in this
+section was taken at 12 commits; the branch has since grown to 14, so the
+number is restated rather than left stale):
 
 ```
-6 Andrew Hibbert <andrew@hibbert.local>
-4 Mike Hibbert <hibbert.michael@gmail.com>
-1 opencode build <build@campfire.local>
-1 Andrew <andrew@campfire.local>
+git log --format='%an <%ae>' | sort | uniq -c | sort -rn
+      8 Andrew Hibbert <andrew@hibbert.local>
+      4 Mike Hibbert <hibbert.michael@gmail.com>
+      1 opencode build <build@campfire.local>
+      1 Andrew <andrew@campfire.local>
+git rev-list --count HEAD  ->  14
 ```
 
-Andrew-authored commits: 6 + 1 = **7 of 12 (58.3%)**. Father-authored: 4 of 12
-(33.3%). opencode: 1 of 12 (8.3%). This is the number as it stands, not a
-flattering one — the entry is not yet majority-Andrew by a wide margin, and the
-`Andrew <andrew@campfire.local>` identity is a second Andrew address that should
-be reconciled before the ratio is quoted anywhere outward.
+Andrew-authored commits: 8 + 1 = **9 of 14 (64.3%)**. Father-authored: 4 of 14
+(28.6%). opencode: 1 of 14 (7.1%). This is the number as it stands, not a
+flattering one. The `Andrew <andrew@campfire.local>` identity is a second
+Andrew address and should be reconciled before the ratio is quoted outward.
 
 ## 4. Transcripts
 
@@ -75,30 +77,34 @@ be reconciled before the ratio is quoted anywhere outward.
   passed off as one.
 
 **Transcripts commit sha: `82be18946edba5c57f6a23ba925ba92a027b2f8e`** — the
-commit that added `transcripts/` together with this doc. Verified live with
-`git rev-parse HEAD` after the commit; `git status --short` then showed only
-`?? node_modules/` (deliberately untracked).
+commit that added `transcripts/` together with this doc. Re-verified live in
+this VERIFY pass: `git rev-parse HEAD` now reads
+`4f50704e067836e0efa307868adb4ff5fdda1388` (14 commits), i.e. the branch has
+moved on since that commit; `82be189` remains the commit that introduced
+`transcripts/`. `node_modules/` is deliberately untracked.
 
 ## 5. opencode summon — wake_id and done file
 
-Summon written this claim:
+Two summons were written this claim, both by one `sandbox_exec` call each:
 
-```
-/data/workspace/andrew-wake/summons/wake_tokenradar_1795692976.json
-```
+| wake_id | summon file | done file | result |
+|---|---|---|---|
+| `wake_tokenradar_1795692740` | written | `wake_tokenradar_1795692740.done.json` (735 B) | `ok: true`, `rc: 0` |
+| `wake_tokenradar_1795692976` | written | `wake_tokenradar_1795692976.done.json` (1021 B) | `ok: true`, `rc: 0` |
 
-- `wake_id`: `wake_tokenradar_1795692976`
-- `source`: `andrew_request`, `visible`: `0`
-- **Done file: NOT PRESENT.** `ls` of
-  `/data/workspace/andrew-wake/summons/wake_tokenradar_1795692976.done.json`
-  returned *"No such file or directory"* on two separate checks, several
-  minutes apart. The shim did not consume this summon within the window of this
-  claim.
+**Correction, made in this VERIFY pass.** An earlier draft of this section
+recorded the second summon as *not consumed*. That was true when it was written
+and is false now: `ls -la /data/workspace/andrew-wake/summons/wake_tokenradar_*`
+in this pass shows both done files present, the second at 11:36. The shim did
+pick it up; the claim simply closed before it landed. The record is corrected
+here rather than left standing, because a stale "miss" is as wrong as a
+flattering "hit".
 
-The earlier summon `wake_tokenradar_1795692740` **did** complete (`ok: true`,
-`rc: 0`), and its payload is the jsonl in `transcripts/`. So the channel works;
-this particular summon was simply not picked up before the claim closed. That
-is reported as a miss, not smoothed over.
+The second done file's `stdout_tail` is the opencode session's own report: it
+states the wake arrived with no ledger facts, no routing events, no progress log
+and no prior narratives attached, and that it would not judge on a blank page.
+That is the honest content of the session — it is quoted, not paraphrased into
+something better.
 
 ## 6. Gates NOT crossed (Father's, not mine)
 

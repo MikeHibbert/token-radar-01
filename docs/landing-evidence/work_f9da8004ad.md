@@ -124,3 +124,46 @@ Not performed. The guard rail is that sparkle must not move a number out of its
 window or turn a check red; with the entry at 8/8 and all three screenshots
 inside the window, a design pass is the last step and was not reached in this
 claim. It remains open.
+
+## 8. LAND stage — live re-confirmation (2026-11-26, this stage)
+
+Re-read live in the LAND stage, not from memory:
+
+- `git rev-parse HEAD` -> `604b8ec7e2a915c165f2bf44b88f70a80b23ac8d`
+- `git status --porcelain` -> only `?? node_modules/` (build artefact, deliberately untracked)
+- `ls -l docs/landing-evidence/work_f9da8004ad.md` -> 5,654 bytes, present
+- `ls -l transcripts/` -> `README.md` (437 B) and `opencode-wake_tokenradar_1795692740.jsonl` (1,318 B), both tracked
+
+**Landing check (behaviour observably changed).** The kit grader was re-run in
+this stage with the nvm Node 22 binary and printed, verbatim:
+
+```
+pass  dashboard_files    4 files, 52788 source bytes, local-only assets
+pass  board_file         100 unique protocol rows with varying whole-dollar values
+pass  sorted_by_value    ranks 1–100 are unique and values never rise
+pass  coverage           40/40 watchlist slugs; 60 additional protocols
+pass  farm_steps         300 concrete steps, each 20–600 trimmed characters
+pass  screenshots        1-board.png: 1440x900, 322285 bytes; 2-detail.png: 1440x900, 347462 bytes; 3-filtered.png: 1440x900, 321416 bytes
+pass  renders            100 tbody rows = 100 expected; detail shows "Bybit"; empty-state hidden
+pass  dossier_matches    byte-for-byte match; 1378620 bytes
+
+8/8 artifact rows passed.
+```
+
+Exit code 0. `stat -c '%n %s' out/screenshots/*.png` in the same stage:
+322,285 / 347,462 / 321,416 bytes — all three inside 307,200–358,400, unchanged
+by this stage. The `renders` row is the observable behaviour: 100 tbody rows
+rendered in a real browser, the detail panel showing "Bybit", and the empty
+state hidden — that is the row that was red before `work_7dfd321917` and is
+green now.
+
+**PR.** The item branch `feature/work_7dfd321917-renders-row-20261126` is
+pushed and open as PR #1 against `main`:
+https://github.com/MikeHibbert/token-radar-01/pull/1 — head commits include
+`604b8ec` (this item's verify commit). `main` was never committed to.
+
+**Still open, honestly:** the sparkle pass (section 7) was not performed; the
+four Father gates in section 6 remain uncrossed; the `Andrew
+<andrew@campfire.local>` identity in the authorship ratio still wants
+reconciling; and the committed transcript is a done-file payload, not a
+tool-emitted opencode session log.
